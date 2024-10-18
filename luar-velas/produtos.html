@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - RedStore | Loja Virtual Design</title>
+    <link rel="shortcut icon" type="image/jpg" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d652b9f554.js" crossorigin="anonymous"></script>
+    <script src="./js/functions.js" type="application/javascript"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/d652b9f554.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    satoshi: ["Satoshi", "sans-serif"],
+                },
+                screens: {
+                    "2xsm": "375px",
+                    xsm: "425px",
+                    "3xl": "2000px",
+                },
+                extend: {
+                    screens: {
+                        'sc-320': { 'raw': '(max-width: 320px)' },
+                        'sc-380': { 'raw': '(max-width: 380px)' },
+                        'sc-420': { 'raw': '(max-width: 420px)' },
+                        'sc-450': { 'raw': '(max-width: 450px)' },
+                        'sc-520': { 'raw': '(max-width: 520px)' },
+                        'sc-565': { 'raw': '(max-width: 565px)' },
+                        'sc-580': { 'raw': '(max-width: 580px)' },
+                        'sc-610': { 'raw': '(max-width: 610px)' },
+                        'sc-660': { 'raw': '(max-width: 660px)' },
+                        'sc-680': { 'raw': '(max-width: 680px)' },
+                        'sc-740': { 'raw': '(max-width: 740px)' },
+                        'sc-820': { 'raw': '(max-width: 820px)' },
+                        'sc-920': { 'raw': '(max-width: 920px)' },
+                        'sc-980': { 'raw': '(max-width: 980px)' },
+                        'scmin-980': { 'raw': '(min-width: 980px)' },
+                        'scmin-1024': { 'raw': '(min-width: 1024px)' },
+                        'sc-1024': { 'raw': '(max-width: 1024px)' },
+                        'sc-1050': { 'raw': '(max-width: 1050px)' },
+                        'scmin-1120': { 'raw': '(min-width: 1120px)' },
+                        'sc-1120': { 'raw': '(max-width: 1120px)' },
+                        'sc-1280': { 'raw': '(max-width: 1280px)' },
+                        'scmin-1280': { 'raw': '(min-width: 1280px)' },
+                        'sc-1415': { 'raw': '(max-width: 1415px)' },
+                        'sc-1480': { 'raw': '(max-width: 1480px)' },
+                        'sc-1520': { 'raw': '(max-width: 1520px)' },
+                        'sc-1600': { 'raw': '(max-width: 1600px)' },
+                        'scmin-1675': { 'raw': '(min-width: 1675px)' },
+                    },
+                    colors: {
+                        current: "currentColor",
+                        transparent: "transparent",
+                        white: "#FFFFFF",
+                        black: "#1C2434",
+                        red: "#FB5454",
+                        "black-2": "#010101",
+                        body: "#64748B",
+                        bodydark: "#AEB7C0",
+                        bodydark1: "#DEE4EE",
+                        bodydark2: "#8A99AF",
+                        primary: "#3C50E0",
+                        secondary: "#80CAEE",
+                        stroke: "#E2E8F0",
+                        gray: "#EFF4FB",
+                        graydark: "#333A48",
+                        "gray-2": "#F7F9FC",
+                        "gray-3": "#FAFAFA",
+                        whiten: "#F1F5F9",
+                        whiter: "#F5F7FD",
+                        boxdark: "#24303F",
+                        "boxdark-2": "#1A222C",
+                        strokedark: "#2E3A47",
+                        "form-strokedark": "#3d4d60",
+                        "form-input": "#1d2a39",
+                        "meta-1": "#DC3545",
+                        "meta-2": "#EFF2F7",
+                        "meta-3": "#10B981",
+                        "meta-4": "#313D4A",
+                        "meta-5": "#259AE6",
+                        "meta-6": "#FFBA00",
+                        "meta-7": "#FF6766",
+                        "meta-8": "#F0950C",
+                        "meta-9": "#E5E7EB",
+                        "meta-10": "#0FADCF",
+                        success: "#219653",
+                        danger: "#D34053",
+                        warning: "#FFA70B",
+                    },
+                    fontSize: {
+                        "title-xxl": ["44px", "55px"],
+                        "title-xxl2": ["42px", "58px"],
+                        "title-xl": ["36px", "45px"],
+                        "title-xl2": ["33px", "45px"],
+                        "title-lg": ["28px", "35px"],
+                        "title-md": ["24px", "30px"],
+                        "title-md2": ["26px", "30px"],
+                        "title-sm": ["20px", "26px"],
+                        "title-sm2": ["22px", "28px"],
+                        "title-xsm": ["18px", "24px"],
+                    },
+                    spacing: {
+                        4.5: "1.125rem",
+                        5.5: "1.375rem",
+                        6.5: "1.625rem",
+                        7.5: "1.875rem",
+                        8.5: "2.125rem",
+                        9.5: "2.375rem",
+                        10.5: "2.625rem",
+                        11: "2.75rem",
+                        11.5: "2.875rem",
+                        12.5: "3.125rem",
+                        13: "3.25rem",
+                        13.5: "3.375rem",
+                        14: "3.5rem",
+                        14.5: "3.625rem",
+                        15: "3.75rem",
+                        15.5: "3.875rem",
+                        16: "4rem",
+                        16.5: "4.125rem",
+                        17: "4.25rem",
+                        17.5: "4.375rem",
+                        18: "4.5rem",
+                        18.5: "4.625rem",
+                        19: "4.75rem",
+                        19.5: "4.875rem",
+                        21: "5.25rem",
+                        21.5: "5.375rem",
+                        22: "5.5rem",
+                        22.5: "5.625rem",
+                        24.5: "6.125rem",
+                        25: "6.25rem",
+                        25.5: "6.375rem",
+                        26: "6.5rem",
+                        27: "6.75rem",
+                        27.5: "6.875rem",
+                        29: "7.25rem",
+                        29.5: "7.375rem",
+                        30: "7.5rem",
+                        31: "7.75rem",
+                        32.5: "8.125rem",
+                        33: "8.25rem",
+                        34: "8.5rem",
+                        34.5: "8.625rem",
+                        35: "8.75rem",
+                        36.5: "9.125rem",
+                        37.5: "9.375rem",
+                        39: "9.75rem",
+                        39.5: "9.875rem",
+                        40: "10rem",
+                        42.5: "10.625rem",
+                        44: "11rem",
+                        45: "11.25rem",
+                        46: "11.5rem",
+                        47.5: "11.875rem",
+                        49: "12.25rem",
+                        50: "12.5rem",
+                        52: "13rem",
+                        52.5: "13.125rem",
+                        54: "13.5rem",
+                        54.5: "13.625rem",
+                        55: "13.75rem",
+                        55.5: "13.875rem",
+                        59: "14.75rem",
+                        60: "15rem",
+                        62.5: "15.625rem",
+                        65: "16.25rem",
+                        67: "16.75rem",
+                        67.5: "16.875rem",
+                        70: "17.5rem",
+                        72.5: "18.125rem",
+                        73: "18.25rem",
+                        75: "18.75rem",
+                        90: "22.5rem",
+                        94: "23.5rem",
+                        95: "23.75rem",
+                        100: "25rem",
+                        115: "28.75rem",
+                        125: "31.25rem",
+                        132.5: "33.125rem",
+                        150: "37.5rem",
+                        171.5: "42.875rem",
+                        180: "45rem",
+                        187.5: "46.875rem",
+                        203: "50.75rem",
+                        230: "57.5rem",
+                        242.5: "60.625rem",
+                    },
+                    maxWidth: {
+                        2.5: "0.625rem",
+                        3: "0.75rem",
+                        4: "1rem",
+                        7: "1.75rem",
+                        9: "2.25rem",
+                        10: "2.5rem",
+                        10.5: "2.625rem",
+                        11: "2.75rem",
+                        13: "3.25rem",
+                        14: "3.5rem",
+                        15: "3.75rem",
+                        16: "4rem",
+                        22.5: "5.625rem",
+                        25: "6.25rem",
+                        30: "7.5rem",
+                        34: "8.5rem",
+                        35: "8.75rem",
+                        40: "10rem",
+                        42.5: "10.625rem",
+                        44: "11rem",
+                        45: "11.25rem",
+                        60: "15rem",
+                        70: "17.5rem",
+                        90: "22.5rem",
+                        94: "23.5rem",
+                        125: "31.25rem",
+                        132.5: "33.125rem",
+                        142.5: "35.625rem",
+                        150: "37.5rem",
+                        180: "45rem",
+                        203: "50.75rem",
+                        230: "57.5rem",
+                        242.5: "60.625rem",
+                        270: "67.5rem",
+                        280: "70rem",
+                        292.5: "73.125rem",
+                    },
+                    maxHeight: {
+                        35: "8.75rem",
+                        70: "17.5rem",
+                        90: "22.5rem",
+                        550: "34.375rem",
+                        300: "18.75rem",
+                    },
+                    minWidth: {
+                        22.5: "5.625rem",
+                        42.5: "10.625rem",
+                        47.5: "11.875rem",
+                        75: "18.75rem",
+                    },
+                    zIndex: {
+                        999999: "999999",
+                        99999: "99999",
+                        9999: "9999",
+                        999: "999",
+                        99: "99",
+                        9: "9",
+                        1: "1",
+                    },
+                    opacity: {
+                        65: ".65",
+                    },
+                    aspectRatio: {
+                        "4/3": "4 / 3",
+                        "21/9": "21 / 9",
+                    },
+                    backgroundImage: {
+                        video: "url('../images/video/video.png')",
+                    },
+                    content: {
+                        "icon-copy": 'url("../images/icon/icon-copy-alt.svg")',
+                    },
+                    transitionProperty: { width: "width", stroke: "stroke" },
+                    borderWidth: {
+                        6: "6px",
+                        10: "10px",
+                        12: "12px",
+                    },
+                    boxShadow: {
+                        default: "0px 8px 13px -3px rgba(0, 0, 0, 0.07)",
+                        card: "0px 1px 3px rgba(0, 0, 0, 0.12)",
+                        "card-2": "0px 1px 2px rgba(0, 0, 0, 0.05)",
+                        switcher:
+                            "0px 2px 4px rgba(0, 0, 0, 0.2), inset 0px 2px 2px #FFFFFF, inset 0px -1px 1px rgba(0, 0, 0, 0.1)",
+                        "switch-1": "0px 0px 5px rgba(0, 0, 0, 0.15)",
+                        1: "0px 1px 3px rgba(0, 0, 0, 0.08)",
+                        2: "0px 1px 4px rgba(0, 0, 0, 0.12)",
+                        3: "0px 1px 5px rgba(0, 0, 0, 0.14)",
+                        4: "0px 4px 10px rgba(0, 0, 0, 0.12)",
+                        5: "0px 1px 1px rgba(0, 0, 0, 0.15)",
+                        6: "0px 3px 15px rgba(0, 0, 0, 0.1)",
+                        7: "-5px 0 0 #313D4A, 5px 0 0 #313D4A",
+                        8: "1px 0 0 #313D4A, -1px 0 0 #313D4A, 0 1px 0 #313D4A, 0 -1px 0 #313D4A, 0 3px 13px rgb(0 0 0 / 8%)",
+                        9: "0px 2px 3px rgba(183, 183, 183, 0.5)",
+                        10: "0px 1px 2px 0px rgba(0, 0, 0, 0.10)",
+                        11: "0px 1px 3px 0px rgba(166, 175, 195, 0.40)",
+                        12: "0px 0.5px 3px 0px rgba(0, 0, 0, 0.18)",
+                        13: "0px 1px 3px 0px rgba(0, 0, 0, 0.08)",
+                        14: "0px 2px 3px 0px rgba(0, 0, 0, 0.10)",
+                    },
+                    dropShadow: {
+                        1: "0px 1px 0px #E2E8F0",
+                        2: "0px 1px 4px rgba(0, 0, 0, 0.12)",
+                        3: "0px 0px 4px rgba(0, 0, 0, 0.15)",
+                        4: "0px 0px 2px rgba(0, 0, 0, 0.2)",
+                        5: "0px 1px 5px rgba(0, 0, 0, 0.2)",
+                    },
+                    keyframes: {
+                        linspin: {
+                            "100%": { transform: "rotate(360deg)" },
+                        },
+                        easespin: {
+                            "12.5%": { transform: "rotate(135deg)" },
+                            "25%": { transform: "rotate(270deg)" },
+                            "37.5%": { transform: "rotate(405deg)" },
+                            "50%": { transform: "rotate(540deg)" },
+                            "62.5%": { transform: "rotate(675deg)" },
+                            "75%": { transform: "rotate(810deg)" },
+                            "87.5%": { transform: "rotate(945deg)" },
+                            "100%": { transform: "rotate(1080deg)" },
+                        },
+                        "left-spin": {
+                            "0%": { transform: "rotate(130deg)" },
+                            "50%": { transform: "rotate(-5deg)" },
+                            "100%": { transform: "rotate(130deg)" },
+                        },
+                        "right-spin": {
+                            "0%": { transform: "rotate(-130deg)" },
+                            "50%": { transform: "rotate(5deg)" },
+                            "100%": { transform: "rotate(-130deg)" },
+                        },
+                        rotating: {
+                            "0%, 100%": { transform: "rotate(360deg)" },
+                            "50%": { transform: "rotate(0deg)" },
+                        },
+                        topbottom: {
+                            "0%, 100%": { transform: "translate3d(0, -100%, 0)" },
+                            "50%": { transform: "translate3d(0, 0, 0)" },
+                        },
+                        bottomtop: {
+                            "0%, 100%": { transform: "translate3d(0, 0, 0)" },
+                            "50%": { transform: "translate3d(0, -100%, 0)" },
+                        },
+                        line: {
+                            "0%, 100%": { transform: "translateY(0)" },
+                            "50%": { transform: "translateY(100%)" },
+                        },
+                        "line-revert": {
+                            "0%, 100%": { transform: "translateY(100%)" },
+                            "50%": { transform: "translateY(0)" },
+                        },
+                    },
+                    animation: {
+                        linspin: "linspin 1568.2353ms linear infinite",
+                        easespin: "easespin 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both",
+                        "left-spin":
+                            "left-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both",
+                        "right-spin":
+                            "right-spin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both",
+                        "ping-once": "ping 5s cubic-bezier(0, 0, 0.2, 1)",
+                        rotating: "rotating 30s linear infinite",
+                        topbottom: "topbottom 60s infinite alternate linear",
+                        bottomtop: "bottomtop 60s infinite alternate linear",
+                        "spin-1.5": "spin 1.5s linear infinite",
+                        "spin-2": "spin 2s linear infinite",
+                        "spin-3": "spin 3s linear infinite",
+                        line1: "line 10s infinite linear",
+                        line2: "line-revert 8s infinite linear",
+                        line3: "line 7s infinite linear",
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="gradientPink">
+    <a href="https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de saber mais sobre as linhas da Luar.&type=phone_number&app_absent=0"
+        target="_blank" rel="noopener noreferrer"
+        class="bg-green-500 hover:bg-green-600 text-white py-4 px-5 rounded-full transition duration-300 shadow-lg fixed bottom-10 right-10 z-10 flex items-center justify-center">
+        <i class="bx bxl-whatsapp !text-[white] text-[30px]"></i>
+    </a>
+    <div class="header bg-[url(/images/background_luar_3.png)] !w-[100%] !h-[auto]">
+        <div class="flex flex-col !w-[100%] justify-center items-center">
+            <div class="navbar sc-1120:justify-between w-[1120px] sc-1120:!w-[100%] flex justify-center items-center">
+                <nav class="text-right w-[100%] text-start sc-1120:hidden">
+                    <section class="text-[white] flex w-[100%] justify-start items-start">
+                        <div
+                            class="text-[white] cursor-pointer hover:text-[#89A992] w-[100%] duration-300 transition text-[19px] font-[JostLight]">
+                            <aside onclick="link('/index.html')" class="flex justify-start gap-[10px] items-center">
+                                <i class='bx bxs-home text-[25px] text-white '></i>
+                                <p class="text-[white]">Início</p>
+                        </div>
+                        <div
+                            class="text-[white] hover:text-[#89A992] w-[100%] duration-300 transition text-[19px] font-[JostLight]">
+                            <aside
+                                onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de saber mais sobre as linhas da Luar.&type=phone_number&app_absent=0')"
+                                class="flex cursor-pointer justify-start gap-[10px] items-center">
+                                <i class='bx bxl-whatsapp text-[25px] text-white '></i>
+                                <p class="text-[white]">Contato</p>
+                        </div>
+                    </section>
+                </nav>
+                <div class="table_center hidden sc-1120:block !w-[100%]">
+                    <i onclick="switch_menu()"
+                        class='fa z-[100] hover:cursor-pointer hidden sc-1120:block fa-solid fa-bars text-[white] text-[40px]'></i>
+                    <div id="drop-down"
+                        class="drop-down--active !w-[400px] sc-520:!w-[100%] opacity-[0] transition duration-300">
+                        <div class="drop-down__menu-box w-[300px] sc-520:!w-[100%] !px-[20px]" id="dropDown">
+                            <ul class="drop-down__menu rounded-[2px] shadow-default">
+                                <li data-name="profile" onclick="link('/index.html')"
+                                    class="drop-down__item cursor-pointer flex justify-between items-center transition duration-300">
+                                    <p class="text-[#85a2c1]">Início</p> <i class='bx text-[20px] bx-home'></i>
+                                </li>
+                                <li data-name="dashboard" onclick="link('/produtos.html')"
+                                    class="drop-down__item flex cursor-pointer justify-between items-center transition duration-300">
+                                    <p class="text-[#85a2c1]">Nossas Velas</p> <img src="/images/icons/candle_blue.png"
+                                        class='!w-[28px]'>
+                                </li>
+                                <li data-name="dashboard" onclick="link('/email.html')"
+                                    class="drop-down__item flex cursor-pointer justify-between items-center transition duration-300">
+                                    <p class="text-[#85a2c1]">E-mail</p> <i class='bx text-[20px] bxs-envelope'></i>
+                                </li>
+                                </li>
+                                <li data-name="dashboard"
+                                    onclick="link('https://www.instagram.com/sintaluar?igsh=M3hnZHJkOThveWV6')"
+                                    class="drop-down__item cursor-pointer flex justify-between items-center transition duration-300">
+                                    <p class="text-[#85a2c1]">Siga-nos!</p> <i class='bx text-[20px] bxl-instagram'></i>
+                                </li>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo sc-520:hidden">
+                    <a href="index.html" class="">
+                        <img src="./images/logo.png" width="125px" alt="Logo da loja">
+                    </a>
+                </div>
+                <nav class="text-right w-[100%] text-start sc-1120:hidden">
+                    <section
+                        class="text-[white] flex !w-[100%] sc-1120:justify-center sc-1120:items-center sc-1120:text-center justify-end items-end">
+                        <div
+                            class="text-[white] hover:text-[#89A992] w-[100%] duration-300 transition text-[19px] font-[JostLight]">
+                            <aside onclick="link('/produtos.html')"
+                                class="flex cursor-pointer justify-end sc-1120:justify-center sc-1120:items-center sc-1120:text-center gap-[10px] items-center">
+                                <img src="/images/icons/candle.png" class='!w-[28px]'></i>
+                                <p class="text-[white]">Nossas Velas</p>
+                        </div>
+                        <div
+                            class="text-[white] hover:text-[#89A992] w-[100%] duration-300 transition text-[19px] font-[JostLight]">
+                            <aside onclick="link('https://www.instagram.com/sintaluar?igsh=M3hnZHJkOThveWV6')"
+                                class="flex justify-end cursor-pointer sc-1120:justify-center sc-1120:items-center sc-1120:text-center gap-[10px] items-center">
+                                <i class='bx bxl-instagram text-[25px] text-white '></i>
+                                <p class="text-[white]">Siga-nos!</p>
+                        </div>
+                        </aside>
+                    </section>
+                </nav>
+                <img src="./images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="px-[65px] sc-580:!px-[20px] mt-[120px] sc-380:!px-[0px] pb-[100px]">
+                <div class="col-2 !flex !justify-center !items-center flex-col">
+                    <h1 class="text-[white] sc-660:!text-[35px] font-[GothanBlack] text-center">Luz, aromas e
+                        <br>sensações para você!
+                    </h1>
+                    <p class="text-[white] sc-580:!text-[13px] text-center">Sucesso não é sempre sobre grandeza. É
+                        sobre
+                        consistência. Aromas
+                        envolventes e qualidade constante.
+                    </p>
+                    <a onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de fazer um orçamento!&type=phone_number&app_absent=0')"
+                        class="btn cursor-pointer hover:!text-[white] duration-300 transition">Fazer orçamento
+                        &#8594;</a>
+                </div>
+            </div>
+        </div>
+        <div class="ml-[30px] flex gap-[10px] pb-[20px]">
+            <i onclick="link('https://www.instagram.com/sintaluar?igsh=M3hnZHJkOThveWV6')"
+                class="bx cursor-pointer bxl-instagram text-[55px] !text-[white]"></i>
+            <i onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de saber mais sobre a Luar Velas Aromáticas!&type=phone_number&app_absent=0')"
+                class="bx cursor-pointer bxl-whatsapp text-[55px] !text-[white]"></i>
+        </div>
+    </div>
+    <div class="small-container">
+
+        <div class="row row-2">
+            <h2>Todos os Produtos</h2>
+            <select>
+                <option>Novidades</option>
+                <option>Menor preço</option>
+                <option>Maior preço</option>
+                <option>Mais Vendidos</option>
+                <option>Relevância</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <a href="produto.html">
+                    <img src="./images/velas/desjardins_4.jpg">
+                </a>
+                <h4>Aroma Desjardins</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>R$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="./images/velas/happy_day_1.jpg">
+                <h4>Oh, happy day</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>R$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="./images/velas/unique_1.jpg">
+                <h4>Aroma Unique</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>R$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="./images/velas/vinho_&_especiarias.jpg">
+                <h4>Vinho & Especiarias</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>R$50.00</p>
+            </div>
+        </div>
+
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+        </div>
+    </div>
+    <!-------- Footer ------>
+    <div class="footer mt-[150px] !bg-[#13412bdc] w-[100%]">
+        <div class="w-[100%]">
+            <div class="flex w-[100%] flex sc-1280:flex-col sc-1280:items-center items-center">
+                <div class="footer-col-1 flex sc-1280:text-center sc-1280:justify-center flex-col">
+                    <h3 class="text-[30px]">Siga-nos</h3>
+                    <section class="flex flex-col">
+                        <div onclick="link('https://www.instagram.com/sintaluar?igsh=M3hnZHJkOThveWV6')"
+                            class="app-logo cursor-pointer flex sc-1280:justify-center justify-start gap-[10px] items-center">
+                            <p class="!text-[#F1F1D6] cursor-pointer">Entre em contato!</p>
+                            <i class="bx text-[white] bxl-instagram text-[20px] "></i>
+                        </div>
+                        <div onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de saber mais sobre as Velas Aromáticas da Luar!&type=phone_number&app_absent=0')"
+                            class="app-logo cursor-pointer flex sc-1280:justify-center justify-start gap-[10px] items-center">
+                            <p class="!text-[#F1F1D6] cursor-pointer">Fale conosco no WhatsApp!</p>
+                            <i class="bx text-[white] bxl-whatsapp text-[20px] "></i>
+                        </div>
+                        <div onclick="link('mailto:support@example.com?subject=Suporte&body=Olá,%20preciso%20de%20ajuda%20com%20..')"
+                            class="app-logo cursor-pointer flex sc-1280:justify-center justify-start gap-[10px] items-center">
+                            <p class="!text-[#F1F1D6] cursor-pointer">Entre em contato no E-mail!</p>
+                            <i class="bx text-[white] bxl-gmail text-[20px] "></i>
+                        </div>
+                    </section>
+                </div>
+                <div class="footer-col-2 sc-1280:mt-[40px] !flex mt-[-20px] items-center sc-1280:flex-col">
+                    <img class="!w-[15%] !min-w-[15%]" src="./images/logo.png">
+                    <p class="!text-[#F1F1D6] sc-380:!w-[260px] !w-[300px]">Sucesso não é sempre sobre grandeza. É
+                        sobre
+                        consistência. Aromas envolventes e qualidade constante.</p>
+                </div>
+                <div class="flex sc-565:flex-col sc-1280:mt-[40px]">
+                    <div class="footer-col-3">
+                        <h3>Links Úteis</h3>
+                        <ul class="!text-[#F1F1D6]">
+                            <li class="cursor-pointer" onclick="link('/index.html')">Início</li>
+                            <li class="cursor-pointer" onclick="link('/produtos.html')">Produtos</li>
+                            <li class="cursor-pointer"
+                                onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de solicitar um orçamento com vocês!&type=phone_number&app_absent=0')">
+                                Solicite um orçamento</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Redes Sociais</h3>
+                        <ul class="!text-[#F1F1D6]">
+                            <li class="cursor-pointer"
+                                onclick="link('https://www.instagram.com/sintaluar?igsh=M3hnZHJkOThveWV6')">
+                                Instagram
+                            </li>
+                            <li class="cursor-pointer"
+                                onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de saber mais sobre as Velas Aromáticas da Luar!&type=phone_number&app_absent=0')">
+                                WhatsApp</li>
+                            <li class="cursor-pointer"
+                                onclick="link('mailto:support@example.com?subject=Suporte&body=Olá,%20preciso%20de%20ajuda%20com%20..')">
+                                E-mail</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright !text-[#F1F1D6]">Copyright 2024 - Equipe Estrela (Ilha 6)</p>
+        </div>
+        </main>
+</body>
+
+</html>
