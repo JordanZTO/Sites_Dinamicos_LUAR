@@ -17,6 +17,10 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/d652b9f554.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+<<<<<<< HEAD
+    <script src="js\destaqueDeLinha.js"></script>
+    <script>
+=======
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMy16EZ8+IR0ybu2Gcqjr59OwSVRyFgfMGxQ2ym" crossorigin="anonymous">
     <style>
         .testimonial { padding: 20px; }
@@ -25,6 +29,7 @@
         .col-3 { flex: 1; text-align: center; }
     </style>
 <script>
+>>>>>>> 836c5f29c8575cda3d1f223bab2c8302b81dfde8
         tailwind.config = {
             theme: {
                 fontFamily: {
@@ -611,14 +616,12 @@
             <div class="small-container">
                 <div class="row">
                     <div class="col-2">
-                        <img src="./images/velas/banner_happy_day.png" class="offer-img sc-1120">
+                        <img src="" id="produto-imagem" class="offer-img sc-1120">
                     </div>
                     <div class="col-2">
                         <p>Nova linha!</p>
-                        <h1 class="sc-420:!text-[27px]">Oh, Happy Day</h1>
-                        <small>
-                            Lançada no aniversário da Luar, a linha Oh, Happy Day é para você que gosta de comemorar!
-                        </small><br>
+                        <h1 class="sc-420:!text-[27px]" id="produto-nome"></h1>
+                        <small id="produto-descricao"></small><br>
                         <a onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de saber mais sobre as velas da linha Oh, Happy Day.&type=phone_number&app_absent=0')"
                             class="btn cursor-pointer hover:!text-[white]">Compre Agora! &#8594;</a>
                     </div>
@@ -720,6 +723,10 @@
                 <p class="copyright !text-[#F1F1D6]">Copyright 2024 - Equipe Estrela (Ilha 6)</p>
             </div>
     </main>
+
+    <script type="module" src="./js/ProdutosPremium.js"></script>
+    <script type="module" src="./js/ProdutosMaisVendidos.js"></script>
+
 </body>
 
 </html>
