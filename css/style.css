@@ -396,6 +396,9 @@ input:focus {
     margin-left: 10px;
 }
 
+.small-img {
+    width: 100%
+}
 .small-img-row {
     display: flex;
     justify-content: space-between;
@@ -818,4 +821,71 @@ form a {
 
 .header_product {
     background: radial-gradient(#fff, #fff3f3) !important;
+}
+
+/* Ajusta o tamanho e espaçamento das imagens dos produtos */
+.product-image {
+width: 100%;
+max-width: 250px;
+height: 250px;
+border-radius: 8px;
+object-fit: cover;
+margin-bottom: 10px;
+}
+
+.product-rating i {
+color: #FFD700; /* Cor dourada para as estrelas */
+margin: 0 2px;
+}
+
+.product-container {
+text-align: center;
+padding: 20px;
+margin: 10px;
+}
+
+#foto_principal {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Estilo para as imagens secundárias no detalhe do produto */
+.small-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Estilo para as imagens dos produtos relacionados */
+#related-products .col-4 img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Estilo para garantir que o layout dos produtos relacionados fique alinhado */
+#related-products .col-4 {
+    text-align: center;
+}
+
+#premium-products,
+#best-sellers {
+    display: flex;
+    gap: 10px; /* Espaçamento entre as imagens */
+    justify-content: center;
+    flex-wrap: nowrap; /* Impede que as imagens quebrem para outra linha */
+}
+
+#premium-products .col-3 img,
+#best-sellers .col-4 img {
+    width: 258.84px; /* Largura consistente */
+    height: 283.80px; /* Altura consistente */
+    object-fit: cover; /* Ajusta as imagens */
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }

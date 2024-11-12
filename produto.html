@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
-    <script src="./js/functions.js" type="application/javascript"></script>
+
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/d652b9f554.js" crossorigin="anonymous"></script>
@@ -490,117 +490,54 @@
             </div>
             <!-- Detalhes do produto -->
 
-            <div class="small-container single-product">
+           
+           <div class="small-container single-product">
                 <div class="row flex justify-center items-center sc-1120:flex-col">
                     <div class="col-2">
-                        <img src="./images/velas/desjardins_1.jpg" width="100%" id="productImg">
+                        <img id="foto_principal" alt="Imagem principal do produto">
 
                         <div class="small-img-row mt-[10px]">
                             <div class="small-img-col">
-                                <img src="./images/velas/desjardins_1.jpg" width="100%" class="small-img">
+                               <img id="img_sec_1" class="small-img" alt="Imagem secundária 1">
                             </div>
                             <div class="small-img-col">
-                                <img src="./images/velas/desjardins_2.jpg" width="100%" class="small-img">
+                                <img id="img_sec_2" class="small-img" alt="Imagem secundária 2">
                             </div>
                             <div class="small-img-col">
-                                <img src="./images/velas/desjardins_3.jpg" width="100%" class="small-img">
+                                <img id="img_sec_3" class="small-img" alt="Imagem secundária 3">
                             </div>
                             <div class="small-img-col">
-                                <img src="./images/velas/desjardins_1.jpg" width="100%" class="small-img">
+                                <img id="img_sec_4" class="small-img" alt="Imagem secundária 4">
                             </div>
                         </div>
 
                     </div>
                     <div class="col-2">
                         <p>Início / Velas</p>
-                        <h1>Aroma Desjardins</h1>
-                        <h4>R$50.00</h4>
-                        <select>
-                            <option>Cor (recipiente)</option>
-                            <option>Branca</option>
-                            <option>Preta</option>
-                            <option>Rosa</option>
-                            <option>Azul</option>
-                            <option>Cinza</option>
-                        </select>
+                        <h1 id="nome">Carregando...</h1>
+                        <h4 id="valor">R$0,00</h4>
                         <input id="quantidade_produtos" type="number" value="1">
                         <button
-                            onclick="getBuy('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de comprar $quantidade quantidade da vela Aroma Desjardins.&type=phone_number&app_absent=0', 'quantidade_produtos')"
+                            onclick="getBuy('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de comprar $quantidade quantidade da vela.', 'quantidade_produtos')"
                             class="btn !text-white">Comprar agora</button>
                         <h3>Detalhes do Produto <i class="fa !text-[#89A992] fa-indent"></i></h3>
                         <br>
-                        <p class="text-[gray]">Transforme seu espaço ao ar livre em um oásis de tranquilidade com a nossa Vela Desjardim. Perfeita para iluminar e perfumar seu jardim, esta vela combina uma cera de alta qualidade com uma fragrância suave e relaxante. Ideal para noites agradáveis ao ar livre, ela cria uma atmosfera acolhedora e sofisticada. Com design elegante e resistente às intempéries, a Vela Desjardim é o complemento perfeito para qualquer ambiente externo.</p>
+                        <p id="detalhe" class="text-[gray]">Carregando descrição do produto...</p>
                     </div>
                 </div>
             </div>
 
-            <!-------- titulo -------->
             <div class="small-container">
                 <div class="row row-2">
                     <h2>Produtos Relacionados</h2>
                 </div>
-            </div>
-
-
-            <!-------- Produtos -------->
-            <div class="small-container">
-
-                <div class="row">
-                    <div onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de saber mais sobre as Velas Aromáticas Unique.&type=phone_number&app_absent=0')"
-                        class="col-4  cursor-pointer">
-                        <img src="./images/velas/unique_1.jpg">
-                        <h4>Aroma Unique</h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                        <p>R$40.00</p>
-                    </div>
-                    <div onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de saber mais sobre as Velas Aromáticas Vinho & Especiarias.&type=phone_number&app_absent=0')"
-                        class="col-4 cursor-pointer">
-                        <img src="./images/velas/vinho_&_especiarias.jpg">
-                        <h4>Vinho & Especiarias</h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                        <p>R$30.00</p>
-                    </div>
-                    <div onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de saber mais sobre as Velas Aromáticas Oh, happy day.&type=phone_number&app_absent=0')"
-                        class="col-4 cursor-pointer">
-                        <img src="./images/velas/happy_day_1.jpg">
-                        <h4>Aroma Oh, Happy Day</h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <p>R$50.00</p>
-                    </div>
-                    <div onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de saber mais sobre as Velas Aromáticas Desjardins.&type=phone_number&app_absent=0')"
-                        class="col-4 cursor-pointer">
-                        <img src="./images/velas/desjardins_4.jpg">
-                        <h4>Aroma Desjardins</h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                        <p>R$50.00</p>
-                    </div>
+            
+                <div class="row" id="related-products">
+                    <!-- Os produtos serão carregados dinamicamente aqui -->
                 </div>
             </div>
             <!-------- Footer ------>
+
             <div class="footer mt-[150px] !bg-[#13412bdc] w-[100%]">
                 <div class="w-[100%]">
                     <div class="flex w-[100%] flex sc-1280:flex-col sc-1280:items-center items-center">
@@ -663,6 +600,8 @@
                     <p class="copyright !text-[#F1F1D6]">Copyright 2024 - Equipe Estrela (Ilha 6)</p>
                 </div>
     </main>
+
+    <script src="js/functions.js"></script>
 </body>
 
 </html>

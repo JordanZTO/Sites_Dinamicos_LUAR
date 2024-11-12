@@ -64,7 +64,7 @@
                         white: "#FFFFFF",
                         black: "#1C2434",
                         red: "#FB5454",
-                        "black-2": "#010101",   
+                        "black-2": "#010101",
                         body: "#64748B",
                         bodydark: "#AEB7C0",
                         bodydark1: "#DEE4EE",
@@ -161,6 +161,7 @@
                         42.5: "10.625rem",
                         44: "11rem",
                         45: "11.25rem",
+                        
                         46: "11.5rem",
                         47.5: "11.875rem",
                         49: "12.25rem",
@@ -388,7 +389,7 @@
                         <section class="text-[white] flex w-[100%] justify-start items-start">
                             <div
                                 class="text-[white] cursor-pointer hover:text-[#89A992] w-[100%] duration-300 transition text-[19px] font-[JostLight]">
-                                <aside onclick="link('/index.html')" class="flex justify-start gap-[10px] items-center">
+                                <aside onclick="link('./index.html')" class="flex justify-start gap-[10px] items-center">
                                     <i class='bx bxs-home text-[25px] text-white '></i>
                                     <p class="text-[white]">Início</p>
                             </div>
@@ -413,10 +414,10 @@
                                         class="drop-down__item cursor-pointer flex justify-between items-center transition duration-300">
                                         <p class="text-[#85a2c1]">Início</p> <i class='bx text-[20px] bx-home'></i>
                                     </li>
-                                    <li data-name="dashboard" onclick="link('..Produtos.html')"
+                                    <li data-name="dashboard" onclick="link("produtos.html")
                                         class="drop-down__item flex cursor-pointer justify-between items-center transition duration-300">
                                         <p class="text-[#85a2c1]">Nossas Velas</p> <img
-                                            src="./images/icons/candle_blue.png" class='!w-[28px]'>
+                                            src="icons/candle.png" class='!w-[28px]'>
                                     </li>
                                     <li data-name="dashboard" onclick="link('/email.html')"
                                         class="drop-down__item flex cursor-pointer justify-between items-center transition duration-300">
@@ -447,7 +448,7 @@
                                 class="text-[white] hover:text-[#89A992] w-[100%] duration-300 transition text-[19px] font-[JostLight]">
                                 <aside onclick="link('/produtos.html')"
                                     class="flex cursor-pointer justify-end sc-1120:justify-center sc-1120:items-center sc-1120:text-center gap-[10px] items-center">
-                                    <img src="./images/icons/candle_blue.png" class='!w-[28px]'></i>
+                                    <img src="icons/candle.png" class='!w-[28px]'></i>
                                     <p class="text-[white]">Nossas Velas</p>
                             </div>
                             <div
@@ -479,127 +480,43 @@
                 </div>
             </div>
             <div class="ml-[30px] flex gap-[10px] pb-[20px]">
-                <i onclick="link('https://www.instagram.com/sintaluar?igsh=M3hnZHJkOThveWV6')" class="bx cursor-pointer bxl-instagram text-[55px] !text-[white]"></i>
+                <i onclick="link('https://www.instagram.com/sintaluar?igsh=M3hnZHJkOThveWV6')" class="bx cursor-pointer b
+                xl-instagram text-[55px] !text-[white]"></i>
                 <i onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de saber mais sobre a Luar Velas Aromáticas!&type=phone_number&app_absent=0')" class="bx cursor-pointer bxl-whatsapp text-[55px] !text-[white]"></i>
             </div>
         </div>
-        <div class="w-[100%] h-[250px] bg-[#89A992] flex justify-center items-center">
-            <section class="flex justify-center items-center gap-[15px] flex-col">
-                <h1
-                    class="uppercase text-[35px] text-[#f1f1d6] tracking-[2px] text-center sc-680:text-[25px] px-[15px] font-[JostMedium]">
-                    SEU CHEIRO, SUA EMPRESA!
-                </h1>
-                <section
-                    onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de saber mais sobre as linhas da Luar.&type=phone_number&app_absent=0')""
-                    class=" cursor-pointer flex justify-center items-center w-[auto] font-[JostMedium] text-[#ffffff]
-                    px-[25px] rounded-[3px] h-[40px] bg-[#484740]">ENTRE
-                    EM CONTATO</section>
-            </section>
-        </div>
-        <!-- Mais Comprados -->
+
+        <!-- Estrutura HTML para os produtos da linha Premium -->
         <section class="categories">
             <section class="small-container">
-
-
                 <div class="row flex justify-center items-center">
                     <div class="flex flex-col mb-[20px] justify-center">
-                        <h1
-                            class="text-[30px] font-[JostLight] sc-680:text-[24px] sc-380:!text-[18px] text-start text-[#8d8d8d]">
-                            Alguns dos nossos produtos</h1>
+                        <h1 class="text-[30px] font-[JostLight] sc-680:text-[24px] sc-380:!text-[18px] text-start text-[#8d8d8d]">
+                            Alguns dos nossos produtos
+                        </h1>
                         <a href="#"
-                            class="btn bg-[#ffb9b9] hover:bg-[#89A992] mt-[20px] w-[200px] hover:!text-[white] duration-300 transition sc-380:!text-[13px]">Linha
-                            Premium
-                            &#8594;</a>
-                        <div class="flex gap-[15px] justify-between sc-820:w-[100%] sc-820:flex-col">
-                            <div onclick="link('/produto.html')" class="col-3 cursor-pointer">
-                                <img class="rounded-[2px] shadow-default" src="./images/velas/desjardins_1.jpg">
-                            </div>
-                            <div onclick="link('/produto.html')" class="col-3 cursor-pointer">
-                                <img class="rounded-[2px] shadow-default" src="./images/velas/desjardins_2.jpg">
-                            </div>
-                            <div onclick="link('/produto.html')" class="col-3 cursor-pointer">
-                                <img class="rounded-[2px] shadow-default" src="./images/velas/desjardins_3.jpg">
-                            </div>
+                            class="btn bg-[#ffb9b9] hover:bg-[#89A992] mt-[20px] w-[200px] hover:!text-[white] duration-300 transition sc-380:!text-[13px]">
+                            Linha Premium &#8594;
+                        </a>
+                        <div id="premium-products" class="flex gap-[15px] justify-between sc-820:w-[100%] sc-820:flex-col">
+                            <!-- Imagens do Produto da Linha Premium da API serão carregadas aqui -->
                         </div>
                         <h1 class="text-[gray]">Aroma Desjardins</h1>
                     </div>
             </section>
         </section>
-        <!--  produtos mais recentes -->
-        <div class="small-container">
+
+        <!-- Mais Vendidos -->
+        <section class="small-container">
             <h2 class="title">Mais Vendidos</h2>
-            <div class="row sc-610:flex-col">
-                <div class="col-4">
-                    <a href="produto.html"><img class="shadow-default" src="./images/velas/happy_day_1.jpg"></a>
-                    <h4 class="mt-[5px]">Oh, Happy Day</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                    <section
-                        onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de saber mais sobre as velas da linha Oh, Happy Day.&type=phone_number&app_absent=0')"
-                        class="w-[180px] cursor-pointer flex gap-[10px] justify-center items-center h-[35px] bg-[#89A992] rounded-[50px] mt-[10px]">
-                        <p class="font-[JostMedium] text-[white]">Entrar em contato</p>
-                        <i class='bx bxl-whatsapp text-[25px] text-white '></i>
-                    </section>
-                </div>
-                <div class="col-4">
-                    <a href="produto.html"><img class="shadow-default" src="./images/velas/desjardins_4.jpg"></a>
-                    <h4 class="mt-[5px]">Aroma desjardins</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <section
-                        onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de saber mais sobre as velas da linha Desjardins.&type=phone_number&app_absent=0')"
-                        class="w-[180px] cursor-pointer flex gap-[10px] justify-center items-center h-[35px] bg-[#89A992] rounded-[50px] mt-[10px]">
-                        <p class="font-[JostMedium] text-[white]">Entrar em contato</p>
-                        <i class='bx bxl-whatsapp text-[25px] text-white '></i>
-                    </section>
-                </div>
-                <div class="col-4">
-                    <a href="produto.html"><img class="shadow-default" src="./images/velas/unique_1.jpg"></a>
-                    <h4 class="mt-[5px]">Aroma Unique</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <section
-                        onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de saber mais sobre as velas da linha Unique.&type=phone_number&app_absent=0')"
-                        class="w-[180px] cursor-pointer flex gap-[10px] justify-center items-center h-[35px] bg-[#89A992] rounded-[50px] mt-[10px]">
-                        <p class="font-[JostMedium] text-[white]">Entrar em contato</p>
-                        <i class='bx bxl-whatsapp text-[25px] text-white '></i>
-                    </section>
-                </div>
-                <div class="col-4">
-                    <a href="produto.html"><img class="shadow-default" src="./images/velas/vinho_&_especiarias.jpg"></a>
-                    <h4 class="mt-[5px]">Vinho & especiarias</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <section
-                        onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de saber mais sobre as velas da linha Vinho & Especiarias.&type=phone_number&app_absent=0')"
-                        class="w-[180px] cursor-pointer flex gap-[10px] justify-center items-center h-[35px] bg-[#89A992] rounded-[50px] mt-[10px]">
-                        <p class="font-[JostMedium] text-[white]">Entrar em contato</p>
-                        <i class='bx bxl-whatsapp text-[25px] text-white '></i>
-                    </section>
-                </div>
+            <div id="best-sellers" class="row sc-610:flex-col">
+                <!-- Produtos Mais Vendidos da API serão carregados aqui -->
             </div>
-        </div>
-        <!-- Oferta -->
+        </section>
+
+
+
+        <!-- Offer Section -->
         <div class="offer">
             <div class="small-container">
                 <div class="row">
@@ -618,15 +535,15 @@
                 </div>
             </div>
         </div>
-        <!-------- Depoimentos -------->
+
+        <!-- Testimonials Section -->
         <section class="testimonial">
             <div class="small-container">
                 <div class="row">
                     <div class="col-3">
                         <i class="fa !text-[#ffb9b9] fa-quote-left"></i>
                         <p>Nunca encontrei velas tão maravilhosas quanto as da Luar. Elas não apenas cheiram bem, mas
-                            também
-                            criam um ambiente aconchegante e acolhedo.</p>
+                            também criam um ambiente aconchegante e acolhedor.</p>
                         <div class="rating">
                             <i class="fa !text-[#89A992] fa-star"></i>
                             <i class="fa !text-[#89A992] fa-star"></i>
@@ -640,8 +557,7 @@
                     <div class="col-3">
                         <i class="fa !text-[#ffb9b9] fa-quote-left"></i>
                         <p>Amo as velas da Luar! O perfume é delicioso e dura muito tempo. Além disso, a variedade de
-                            aromas
-                            é incrível, sempre encontro uma nova fragrância favorita."</p>
+                            aromas é incrível, sempre encontro uma nova fragrância favorita.</p>
                         <div class="rating">
                             <i class="fa !text-[#89A992] fa-star"></i>
                             <i class="fa !text-[#89A992] fa-star"></i>
@@ -670,6 +586,7 @@
             </div>
         </section>
 
+        <!-- About Section -->
         <div class="about">
             <div class="px-[150px] sc-980:px-[20px] mt-[40px]">
                 <div class="!flex flex gap-[100px] sc-980:flex-col">
@@ -678,42 +595,8 @@
                         <h1 class="sc-420:!text-[27px]">O início</h1>
                         <small>
                             A Luar nasceu da paixão por transformar ambientes através dos sentidos.
-
                             Fundada por Luís e Araceli, a empresa surgiu de um sonho compartilhado de unir nossas
-                            expertises em engenharia química e biotecnologia com a paixão por aromas e fragrâncias..
-
-                            O nosso nome? Depois de um incansável brainstorming, a inspiração veio quando percebemos que
-                            "Luar" não apenas evocava a magia e a beleza da lua, mas também unia nossas iniciais de
-                            forma perfeita (brega eu sei, mas o Luís é pisciano, isso explica muita coisa).
-
-                            Desde o início, nosso objetivo tem sido criar fragrâncias que não apenas perfumem, mas
-                            também contem histórias e evoquem emoções.
-
-                            Começamos nossas atividades com a venda de velas aromáticas, nosso carro chefe até hoje. Por
-                            que velas?
-                            As velas não apenas perfumam o ambiente, mas também proporcionam uma experiência quase
-                            ritualística, transformando momentos cotidianos em ocasiões especiais. Cada vela que criamos
-                            é uma combinação de aromas cuidadosamente selecionados para evocar sensações de conforto,
-                            relaxamento e bem-estar, tornando-se um elemento essencial para quem busca apreciar e
-                            romantizar os pequenos momentos da vida.
-
-                            Percebemos que essa paixão poderia ser ainda mais significativa quando vinculada aos sonhos,
-                            de outras pessoas. Assim como a Luar tem sido a realização dos nossos sonhos, por que não
-                            sonhar junto com outros empresários?
-
-                            Assim, começamos a nos aventurar pelo universo do marketing olfativo. Somos a primeira
-                            empresa de marketing olfativo em Toledo PR e nos orgulhamos de desenvolver identidades
-                            olfativas exclusivas que capturam a essência de cada marca.
-
-                            Nosso compromisso com a qualidade é inegociável. Cada produto é resultado de rigorosos
-                            testes e da seleção dos melhores insumos disponíveis no mercado. Acreditamos que a qualidade
-                            deve ser o padrão, não um diferencial. Por isso, todos os nossos fornecedores são
-                            cuidadosamente selecionados para garantir que entregamos apenas o melhor.
-
-                            Na Luar, estamos comprometidos em fornecer soluções aromáticas personalizadas que atendam às
-                            necessidades específicas de cada cliente. Queremos que cada fragrância criada por nós seja
-                            um reflexo da identidade e dos valores da marca, proporcionando uma experiência sensorial
-                            única e inesquecível.
+                            expertises em engenharia química e biotecnologia com a paixão por aromas e fragrâncias.
                         </small><br>
                     </div>
                     <div class="col-2">
@@ -721,46 +604,7 @@
                         <h1 class="sc-420:!text-[27px]">Marketing Olfativo</h1>
                         <small>
                             Na Luar, acreditamos que o marketing olfativo é uma poderosa ferramenta para fortalecer a
-                            identidade da sua marca e criar conexões emocionais profundas com seus clientes. Nosso
-                            objetivo é proporcionar experiências sensoriais únicas que não apenas encantem, mas que
-                            também permaneçam na memória, que tornem a sua marca inesquecível.
-
-                            Conheça nossos principais serviços de marketing olfativo:
-
-                            1. Criação de Identidade Olfativa
-                            Desenvolvemos fragrâncias exclusivas que refletem a essência e os valores da sua marca. Cada
-                            aroma é cuidadosamente elaborado para transmitir a personalidade da sua empresa e
-                            proporcionar uma comunicação assertiva entre você e o seu cliente.
-
-                            2. Aromatização de Ambientes
-                            Transforme qualquer espaço em um ambiente acolhedor e inesquecível com nossas soluções de
-                            aromatização. Utilizamos produtos e aparelhos de alta qualidade para garantir uma
-                            distribuição uniforme e constante do aroma, ideal para lojas, escritórios, clínicas e
-                            eventos.
-
-                            3. Produtos personalizados e estratégias de aromatização
-                            Além de criar a sua fragrância exclusiva, desenvolvemos produtos personalizados para a sua
-                            marca, como velas, perfume de papel, pastilhas aromáticas, sachês aromáticos, chaveiros
-                            aromáticos.
-
-                            Tudo isso para que você possa oferecer aos seus clientes um toque de elegância, sofisticação
-                            e originalidade, proporcionando uma experiência sensorial diferenciada aos seus clientes.
-
-                            4. Consultoria e Suporte
-                            Nossa equipe especializada oferece consultoria completa para a implementação do marketing
-                            olfativo em sua empresa. Desde a escolha da fragrância ideal até a disposição estratégica
-                            dos aromatizadores, estamos ao seu lado em cada etapa do processo.
-
-                            5. Neutralizadores de Odores
-
-                            Para espaços como banheiros e áreas de serviço, oferecemos neutralizadores de odores que
-                            eliminam rapidamente qualquer cheiro indesejado, mantendo o ambiente sempre agradável e
-                            convidativo.
-
-                            Explorar esses serviços permitirá que sua marca não apenas se destaque, mas também crie
-                            memórias duradouras e positivas para seus clientes. Na Luar, estamos comprometidos com a
-                            excelência e a inovação no marketing olfativo, ajudando sua empresa a alcançar novos
-                            patamares de sucesso sensorial.uma experiência sensorial
+                            identidade da sua marca e criar conexões emocionais profundas com seus clientes.
                         </small><br>
                         <a onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de saber mais sobre as velas da Luar.&type=phone_number&app_absent=0')"
                             class="btn cursor-pointer hover:!text-[white]">Entre em contato! &#8594;</a>
@@ -769,7 +613,7 @@
             </div>
         </div>
 
-        <!-------- Footer ------>
+        <!-- Footer -->
         <div class="footer mt-[150px] !bg-[#13412bdc] w-[100%]">
             <div class="w-[100%]">
                 <div class="flex w-[100%] flex sc-1280:flex-col sc-1280:items-center items-center">
@@ -832,5 +676,70 @@
             </div>
     </main>
 </body>
+
+<script>
+    // Função para buscar dados da API
+    async function fetchProducts() {
+        try {
+            // Carregar o primeiro produto para a seção "Linha Premium" com todas as imagens secundárias
+            const premiumResponse = await fetch("https://uzgfgx3m.api.sanity.io/v2022-03-07/data/query/production?query=*[_type == 'product'][0]{ title, description, price, 'primaryImage': image_princ.asset->url, 'secondaryImage1': image_secund_1.asset->url, 'secondaryImage2': image_secund_2.asset->url, 'secondaryImage3': image_secund_3.asset->url, 'secondaryImage4': image_secund_4.asset->url }");
+            const premiumData = await premiumResponse.json();
+            const premiumProduct = premiumData.result;
+    
+            if (premiumProduct) {
+                // Carregar imagens do produto da linha premium
+                const premiumContainer = document.getElementById('premium-products');
+                premiumContainer.innerHTML = `
+                    <div class="col-3 cursor-pointer">
+                        <img class="rounded-[2px] shadow-default" src="${premiumProduct.primaryImage}" alt="${premiumProduct.title} - Imagem Principal">
+                    </div>
+                    <div class="col-3 cursor-pointer">
+                        <img class="rounded-[2px] shadow-default" src="${premiumProduct.secondaryImage1}" alt="${premiumProduct.title} - Imagem Secundária 1">
+                    </div>
+                    <div class="col-3 cursor-pointer">
+                        <img class="rounded-[2px] shadow-default" src="${premiumProduct.secondaryImage2}" alt="${premiumProduct.title} - Imagem Secundária 2">
+                    </div>
+                    <div class="col-3 cursor-pointer">
+                        <img class="rounded-[2px] shadow-default" src="${premiumProduct.secondaryImage3}" alt="${premiumProduct.title} - Imagem Secundária 3">
+                    </div>
+                    <div class="col-3 cursor-pointer">
+                        <img class="rounded-[2px] shadow-default" src="${premiumProduct.secondaryImage4}" alt="${premiumProduct.title} - Imagem Secundária 4">
+                    </div>
+                `;
+            }
+    
+            // Carregar todos os produtos para a seção "Mais Vendidos"
+            const bestSellersResponse = await fetch("https://uzgfgx3m.api.sanity.io/v2022-03-07/data/query/production?query=*[_type == 'product']{ title, description, price, 'primaryImage': image_princ.asset->url }");
+            const bestSellersData = await bestSellersResponse.json();
+            const bestSellersProducts = bestSellersData.result;
+    
+            const bestSellersContainer = document.getElementById('best-sellers');
+            bestSellersContainer.innerHTML = bestSellersProducts.map(product => `
+                <div class="col-4">
+                    <a href="produto.html"><img class="shadow-default" src="${product.primaryImage}" alt="${product.title}"></a>
+                    <h4 class="mt-[5px]">${product.title}</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+                    </div>
+                    <section onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de saber mais sobre ${product.title}.')" class="w-[180px] cursor-pointer flex gap-[10px] justify-center items-center h-[35px] bg-[#89A992] rounded-[50px] mt-[10px]">
+                        <p class="font-[JostMedium] text-[white]">Entrar em contato</p>
+                        <i class="bx bxl-whatsapp text-[25px] text-white"></i>
+                    </section>
+                </div>
+            `).join('');
+    
+        } catch (error) {
+            console.error("Erro ao buscar produtos:", error);
+        }
+    }
+    
+    // Chamar a função para carregar produtos
+    fetchProducts();
+    </script>
+    
 
 </html>
