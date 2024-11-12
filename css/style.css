@@ -153,7 +153,9 @@ h4 {
 .col-4 p{
     font-size: 14px;
 }
-
+.ratingstar, .fa-star-half-alt{
+    color:#89A992;
+}
 .rating .fa, .fa-star-half-alt{
     color: #ff523b;
 }
