@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
             if (slogans.length > 0) {
                 const slogan = slogans[0];
-                console.log("Dados recebidos:", slogan);  // Verifique se subtitulo1 e subtitulo2 estão aqui
 
                 document.getElementById("slogan-title1").innerText = slogan.titulo1 || "";
                 document.getElementById("slogan-title2").innerText = slogan.titulo2 || "";
