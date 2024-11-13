@@ -820,6 +820,17 @@ form a {
     font-size: 1.2rem;
 }
 
+.footer-col-1,
+.footer-col-2 {
+    color: #F1F1D6 !important;
+}
+
+.footer-col-1 p,
+.footer-col-2 p,
+.footer-col-1 a,
+.footer-col-2 a {
+    color: #F1F1D6 !important;
+}
 
 .header_product {
     background: radial-gradient(#fff, #fff3f3) !important;
