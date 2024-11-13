@@ -536,70 +536,14 @@
                     <!-- Os produtos serão carregados dinamicamente aqui -->
                 </div>
             </div>
-            <!-------- Footer ------>
-
-            <div class="footer mt-[150px] !bg-[#13412bdc] w-[100%]">
-                <div class="w-[100%]">
-                    <div class="flex w-[100%] flex sc-1280:flex-col sc-1280:items-center items-center">
-                        <div class="footer-col-1 flex sc-1280:text-center sc-1280:justify-center flex-col">
-                            <h3 class="text-[30px]">Siga-nos</h3>
-                            <section class="flex flex-col">
-                                <div onclick="link('https://www.instagram.com/sintaluar?igsh=M3hnZHJkOThveWV6')"
-                                    class="app-logo cursor-pointer flex sc-1280:justify-center justify-start gap-[10px] items-center">
-                                    <p class="!text-[#F1F1D6] cursor-pointer">Entre em contato!</p>
-                                    <i class="bx text-[white] bxl-instagram text-[20px] "></i>
-                                </div>
-                                <div onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de saber mais sobre as Velas Aromáticas da Luar!&type=phone_number&app_absent=0')"
-                                    class="app-logo cursor-pointer flex sc-1280:justify-center justify-start gap-[10px] items-center">
-                                    <p class="!text-[#F1F1D6] cursor-pointer">Fale conosco no WhatsApp!</p>
-                                    <i class="bx text-[white] bxl-whatsapp text-[20px] "></i>
-                                </div>
-                                <div onclick="link('mailto:support@example.com?subject=Suporte&body=Olá,%20preciso%20de%20ajuda%20com%20..')"
-                                    class="app-logo cursor-pointer flex sc-1280:justify-center justify-start gap-[10px] items-center">
-                                    <p class="!text-[#F1F1D6] cursor-pointer">Entre em contato no E-mail!</p>
-                                    <i class="bx text-[white] bxl-gmail text-[20px] "></i>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="footer-col-2 sc-1280:mt-[40px] !flex mt-[-20px] items-center sc-1280:flex-col">
-                            <img class="!w-[15%] !min-w-[15%]" src="./images/logo.png">
-                            <p class="!text-[#F1F1D6] sc-380:!w-[260px] !w-[300px]">Sucesso não é sempre sobre grandeza.
-                                É
-                                sobre
-                                consistência. Aromas envolventes e qualidade constante.</p>
-                        </div>
-                        <div class="flex sc-565:flex-col sc-1280:mt-[40px]">
-                            <div class="footer-col-3">
-                                <h3>Links Úteis</h3>
-                                <ul class="!text-[#F1F1D6]">
-                                    <li class="cursor-pointer" onclick="link('/index.html')">Início</li>
-                                    <li class="cursor-pointer" onclick="link('/produtos.html')">Produtos</li>
-                                    <li class="cursor-pointer"
-                                        onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de solicitar um orçamento com vocês!&type=phone_number&app_absent=0')">
-                                        Solicite um orçamento</li>
-                                </ul>
-                            </div>
-                            <div class="footer-col-4">
-                                <h3>Redes Sociais</h3>
-                                <ul class="!text-[#F1F1D6]">
-                                    <li class="cursor-pointer"
-                                        onclick="link('https://www.instagram.com/sintaluar?igsh=M3hnZHJkOThveWV6')">
-                                        Instagram
-                                    </li>
-                                    <li class="cursor-pointer"
-                                        onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de saber mais sobre as Velas Aromáticas da Luar!&type=phone_number&app_absent=0')">
-                                        WhatsApp</li>
-                                    <li class="cursor-pointer"
-                                        onclick="link('mailto:support@example.com?subject=Suporte&body=Olá,%20preciso%20de%20ajuda%20com%20..')">
-                                        E-mail</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-                    <p class="copyright !text-[#F1F1D6]">Copyright 2024 - Equipe Estrela (Ilha 6)</p>
-                </div>
-    </main>
+     <!-- Footer -->
+     <div class="footer mt-10 bg-[#13412bdc] w-full" id="dynamicFooter">
+        <div class="footer-content flex justify-between space-x-10 py-6 px-4" id="footer-content"></div>
+        <hr class="border-[#F1F1D6] my-4">
+        <p class="copyright text-center text-[#F1F1D6]" id="copyright">Copyright 2024 - Equipe Estrela (Ilha 6)</p>
+    </div>        
+</main>
+<script src="./js/footer-dinamico.js"></script>
 
     <script src="js/functions.js"></script>
 </body>
