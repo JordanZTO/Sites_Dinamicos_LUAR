@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const apiURL = "https://uzgfgx3m.api.sanity.io/v2022-03-07/data/query/production?query=*%5B_type+%3D%3D+%22slogan%22%5D%7B%0A++titulo1%2C%0A++titulo2%2C%0A++subtitulo1%2C%0A++subtitulo2%2C%0A++texto1%2C%0A++texto2%2C%0A++botao%7B%0A++++texto%2C%0A++++link%0A++%7D%0A%7D";
+    const apiURL = "https://uzgfgx3m.api.sanity.io/v2022-03-07/data/query/production?query=*%5B_type+%3D%3D+%22slogan%22%5D%7B%0A++titulo1%2C%0A++titulo2%2C%0A++subtitulo1%2C%0A++subtitulo2%2C%0A++texto1%2C%0A++texto2%2C%0A++botao%0A%7D";
 
     async function carregarSlogan() {
         try {
