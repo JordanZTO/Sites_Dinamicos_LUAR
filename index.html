@@ -499,25 +499,122 @@
             </div>
         </div>
 
-        <!-- Estrutura HTML para os produtos da linha Premium -->
+        <div class="w-[100%] h-[250px] bg-[#89A992] flex justify-center items-center">
+            <section class="flex justify-center items-center gap-[15px] flex-col">
+                <h1
+                    class="uppercase text-[35px] text-[#f1f1d6] tracking-[2px] text-center sc-680:text-[25px] px-[15px] font-[JostMedium]">
+                    SEU CHEIRO, SUA EMPRESA!
+                </h1>
+                <section
+                    onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de saber mais sobre as linhas da Luar.&type=phone_number&app_absent=0')""
+                    class=" cursor-pointer flex justify-center items-center w-[auto] font-[JostMedium] text-[#ffffff]
+                    px-[25px] rounded-[3px] h-[40px] bg-[#484740]">ENTRE
+                    EM CONTATO</section>
+            </section>
+        </div>
+        <!-- Mais Comprados -->
         <section class="categories">
             <section class="small-container">
+
+
                 <div class="row flex justify-center items-center">
                     <div class="flex flex-col mb-[20px] justify-center">
-                        <h1 class="text-[30px] font-[JostLight] sc-680:text-[24px] sc-380:!text-[18px] text-start text-[#8d8d8d]">
-                            Alguns dos nossos produtos
-                        </h1>
+                        <h1
+                            class="text-[30px] font-[JostLight] sc-680:text-[24px] sc-380:!text-[18px] text-start text-[#8d8d8d]">
+                            Alguns dos nossos produtos</h1>
                         <a href="#"
-                            class="btn bg-[#ffb9b9] hover:bg-[#89A992] mt-[20px] w-[200px] hover:!text-[white] duration-300 transition sc-380:!text-[13px]">
-                            Linha Premium &#8594;
-                        </a>
-                        <div id="premium-products" class="flex gap-[15px] justify-between sc-820:w-[100%] sc-820:flex-col">
-                            <!-- Imagens do Produto da Linha Premium da API serão carregadas aqui -->
+                            class="btn bg-[#ffb9b9] hover:bg-[#89A992] mt-[20px] w-[200px] hover:!text-[white] duration-300 transition sc-380:!text-[13px]">Linha
+                            Premium
+                            &#8594;</a>
+                        <div class="flex gap-[15px] justify-between sc-820:w-[100%] sc-820:flex-col">
+                            <div onclick="link('/produto.html')" class="col-3 cursor-pointer">
+                                <img class="rounded-[2px] shadow-default" src="./images/velas/desjardins_1.jpg">
+                            </div>
+                            <div onclick="link('/produto.html')" class="col-3 cursor-pointer">
+                                <img class="rounded-[2px] shadow-default" src="./images/velas/desjardins_2.jpg">
+                            </div>
+                            <div onclick="link('/produto.html')" class="col-3 cursor-pointer">
+                                <img class="rounded-[2px] shadow-default" src="./images/velas/desjardins_3.jpg">
+                            </div>
                         </div>
                         <h1 class="text-[gray]">Aroma Desjardins</h1>
                     </div>
             </section>
         </section>
+        <!--  produtos mais recentes -->
+        <div class="small-container">
+            <h2 class="title">Mais Vendidos</h2>
+            <div class="row sc-610:flex-col" id="rowatualizado">
+                <div class="col-4">
+                    <a href="produto.html"><img class="shadow-default" src="./images/velas/happy_day_1.jpg"></a>
+                    <h4 class="mt-[5px]">Oh, Happy Day</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <section
+                        onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de saber mais sobre as velas da linha Oh, Happy Day.&type=phone_number&app_absent=0')"
+                        class="w-[180px] cursor-pointer flex gap-[10px] justify-center items-center h-[35px] bg-[#89A992] rounded-[50px] mt-[10px]">
+                        <p class="font-[JostMedium] text-[white]">Entrar em contato</p>
+                        <i class='bx bxl-whatsapp text-[25px] text-white '></i>
+                    </section>
+                </div>
+                <div class="col-4">
+                    <a href="produto.html"><img class="shadow-default" src="./images/velas/desjardins_4.jpg"></a>
+                    <h4 class="mt-[5px]">Aroma desjardins</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <section
+                        onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de saber mais sobre as velas da linha Desjardins.&type=phone_number&app_absent=0')"
+                        class="w-[180px] cursor-pointer flex gap-[10px] justify-center items-center h-[35px] bg-[#89A992] rounded-[50px] mt-[10px]">
+                        <p class="font-[JostMedium] text-[white]">Entrar em contato</p>
+                        <i class='bx bxl-whatsapp text-[25px] text-white '></i>
+                    </section>
+                </div>
+                <div class="col-4">
+                    <a href="produto.html"><img class="shadow-default" src="./images/velas/unique_1.jpg"></a>
+                    <h4 class="mt-[5px]">Aroma Unique</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <section
+                        onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de saber mais sobre as velas da linha Unique.&type=phone_number&app_absent=0')"
+                        class="w-[180px] cursor-pointer flex gap-[10px] justify-center items-center h-[35px] bg-[#89A992] rounded-[50px] mt-[10px]">
+                        <p class="font-[JostMedium] text-[white]">Entrar em contato</p>
+                        <i class='bx bxl-whatsapp text-[25px] text-white '></i>
+                    </section>
+                </div>
+                <div class="col-4">
+                    <a href="produto.html"><img class="shadow-default" src="./images/velas/vinho_&_especiarias.jpg"></a>
+                    <h4 class="mt-[5px]">Vinho & especiarias</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <section
+                        onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de saber mais sobre as velas da linha Vinho & Especiarias.&type=phone_number&app_absent=0')"
+                        class="w-[180px] cursor-pointer flex gap-[10px] justify-center items-center h-[35px] bg-[#89A992] rounded-[50px] mt-[10px]">
+                        <p class="font-[JostMedium] text-[white]">Entrar em contato</p>
+                        <i class='bx bxl-whatsapp text-[25px] text-white '></i>
+                    </section>
+                </div>
+            </div>
+        </div>
 
         <!-- Mais Vendidos -->
         <section class="small-container">
@@ -585,71 +682,6 @@
     <script type="module" src="./js/ProdutosPremium.js"></script>
     <script type="module" src="./js/ProdutosMaisVendidos.js"></script>
 
-</body>
-
-<script>
-    // Função para buscar dados da API
-    async function fetchProducts() {
-        try {
-            // Carregar o primeiro produto para a seção "Linha Premium" com todas as imagens secundárias
-            const premiumResponse = await fetch("https://uzgfgx3m.api.sanity.io/v2022-03-07/data/query/production?query=*[_type == 'product'][0]{ title, description, price, 'primaryImage': image_princ.asset->url, 'secondaryImage1': image_secund_1.asset->url, 'secondaryImage2': image_secund_2.asset->url, 'secondaryImage3': image_secund_3.asset->url, 'secondaryImage4': image_secund_4.asset->url }");
-            const premiumData = await premiumResponse.json();
-            const premiumProduct = premiumData.result;
-    
-            if (premiumProduct) {
-                // Carregar imagens do produto da linha premium
-                const premiumContainer = document.getElementById('premium-products');
-                premiumContainer.innerHTML = `
-                    <div class="col-3 cursor-pointer">
-                        <img class="rounded-[2px] shadow-default" src="${premiumProduct.primaryImage}" alt="${premiumProduct.title} - Imagem Principal">
-                    </div>
-                    <div class="col-3 cursor-pointer">
-                        <img class="rounded-[2px] shadow-default" src="${premiumProduct.secondaryImage1}" alt="${premiumProduct.title} - Imagem Secundária 1">
-                    </div>
-                    <div class="col-3 cursor-pointer">
-                        <img class="rounded-[2px] shadow-default" src="${premiumProduct.secondaryImage2}" alt="${premiumProduct.title} - Imagem Secundária 2">
-                    </div>
-                    <div class="col-3 cursor-pointer">
-                        <img class="rounded-[2px] shadow-default" src="${premiumProduct.secondaryImage3}" alt="${premiumProduct.title} - Imagem Secundária 3">
-                    </div>
-                    <div class="col-3 cursor-pointer">
-                        <img class="rounded-[2px] shadow-default" src="${premiumProduct.secondaryImage4}" alt="${premiumProduct.title} - Imagem Secundária 4">
-                    </div>
-                `;
-            }
-    
-            // Carregar todos os produtos para a seção "Mais Vendidos"
-            const bestSellersResponse = await fetch("https://uzgfgx3m.api.sanity.io/v2022-03-07/data/query/production?query=*[_type == 'product']{ title, description, price, 'primaryImage': image_princ.asset->url }");
-            const bestSellersData = await bestSellersResponse.json();
-            const bestSellersProducts = bestSellersData.result;
-    
-            const bestSellersContainer = document.getElementById('best-sellers');
-            bestSellersContainer.innerHTML = bestSellersProducts.map(product => `
-                <div class="col-4">
-                    <a href="produto.html"><img class="shadow-default" src="${product.primaryImage}" alt="${product.title}"></a>
-                    <h4 class="mt-[5px]">${product.title}</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-alt"></i>
-                    </div>
-                    <section onclick="link('https://api.whatsapp.com/send/?phone=5545920013524&text=Olá, gostaria de saber mais sobre ${product.title}.')" class="w-[180px] cursor-pointer flex gap-[10px] justify-center items-center h-[35px] bg-[#89A992] rounded-[50px] mt-[10px]">
-                        <p class="font-[JostMedium] text-[white]">Entrar em contato</p>
-                        <i class="bx bxl-whatsapp text-[25px] text-white"></i>
-                    </section>
-                </div>
-            `).join('');
-    
-        } catch (error) {
-            console.error("Erro ao buscar produtos:", error);
-        }
-    }
-    
-    // Chamar a função para carregar produtos
-    fetchProducts();
-    </script>
-    
+</body>    
 
 </html>
